@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>搜狐</title>
+  <link rel="icon" href="img/title.ico" type="image/x-icon">
+ <style type="text/css">
+	/*顶端条的css*/
+	*{
+		margin:0;
+		padding:0;
+		font-family:microsoft yahei;
+		font-size:10px;
+	}
+	#all{
+		width:950px;
+		margin:0 auto;
+	}
+	.top{
+		height:30px;
+		width:100%;
+		background-color:#EEF5FD;
+		overflow: hidden;
+		left:0%;
+		top:0%;
+		position:fixed;
+	}
+	#logo1{
+		margin-left:210px;
+		float:left;
+	}
+	#submit{
+		float:left;
+		margin-left:15px;
+		overflow:hidden;
+	}
+	.jiantou{
+		width:20px;
+		border:1px solid #A9A9A9;
+		border-right:0px;
+		height:20px;
+		background:url(img/jiantou.jpg);
+		float:left;
+		margin-top:5px;
+	}
+	.user-name{
+		width:133px;
+		height:16px;
+		margin-top:5px;
+		float:left;
+	}
+	.password{
+		width:84px;
+		height:16px;
+		margin-top:5px;
+		margin-left:4px;
+		float:left;
+	}
+	.submit{
+		background-color:#F37E48;
+		color:#FFFFFF;
+		float:left;
+		margin-top:5px;
+		margin-left:3px;
+		border:none;
+		width:38px;
+		height:20px;
+	}
+	.div-ul{
+		margin-left:20px;
+		float:left;
+		
+		overflow:hidden;
+		width:120px;
+		height:29px;
+	}
+	.ul-top{
+		list-style-type:none;
+		padding-top:8px;
+	}
+	.li-top{
+		float:left;
+		margin-left:10px;
+	}
+	a{
+		text-decoration:none;
+	}
+	.submit-a:link{
+		color:black;
+	}
+	.submit-a:visited{
+		color:black;
+	}
+	.submit-a:active{
+		color:black;
+		font-size:20px;
+	}
+	#logo3{
+		margin-right:220px;
+		margin-left:80px;
+		float:right;
+		margin-top:5px;
+	}
+	/*第二行的导航栏*/
+	.second{
+		height:76px;
+		margin-top:35px;
+	}
+	.souhu-logo{
+		float:left;
+		width:140px;
+	}
+	.navigation-div{
+		width:795px;
+		height:80px;
+		margin-left:5px;
+		float:left;
+	}
+	/*上面的css*/
+	.navigation-top{
+		background-color:#FFEA8F;
+		height:26px;
+		border-bottom:1px solid #8C8C8C;
+	}
+	.navigation-top-ul{
+		padding:5px;
+		font-size:13px;
+	}
+	.navigation-top-li{
+		float:left;
+		list-style-type:none;
+		margin-left:9px;
+		margin-top:3px;
+	}
+	.navigation-top-li a:link{
+		color:#000000;
+	}
+	.navigation-top-li a:visited{
+		color:#000000;
+	}
+	.navigation-top-li a:hover{
+		color:#000000;
+		text-decoration:underline;
+	}
+	/*下面的css*/
+	.navigation-bottom{
+		height:48px;
+		background-color:#FFFCDC;
+		border-bottom:1px solid #8C8C8C;
+	}
+	.navigation-bottom-ul{
+		padding:4px;
+		font-size:13px;
+		overflow: hidden;
+	}
+	.navigation-bottom-li{
+		float:left;
+		list-style-type:none;
+		margin-left:10px;
+	}
+	.navigation-bottom-li a:link{
+		color:#000000;
+	}
+	.navigation-bottom-li a:visited{
+		color:#000000;
+	}
+	.navigation-bottom-li a:hover{
+		color:#000000;
+		text-decoration:underline;
+	}
+	/*第三行*/
+	.third{
+		border:1px solid #8C8C8C;
+		width:940px;
+		height:260px;
+		margin-top:5px;
+	}
+	/*one*/
+	.third-one{
+		width:135px;
+		float:left;
+	}
+	.third-one-ul{
+		font-size:13px;
+	}
+	.third-one-li{
+		list-style-type:none;
+		margin:10px 0 0 3px;
+	}
+	.third-one-li a:link{
+		color:#223D7C;
+	}
+	.third-one-li a:visited{
+		color:#223D7C;
+	}
+	.third-one-li a:hover{
+		color:#FF0000;
+		text-decoration:underline;
+	}
+	/*two*/
+	.third-two{
+		width:460px;
+		float:left;
+		margin-left:5px;
+	}
+	.third-two-ad-top{
+
+	}
+	.third-two-ul{
+		font-size:13px;
+	}
+	.third-two-li{
+		list-style-type:none;
+		margin:10px 0 0 10px;
+		float:left;
+	}
+	.third-two-li a:link {
+		color:#223D7C;
+	}
+	.third-two-li a:visited {
+		color:#223D7C;
+	}
+	.third-two-li a:hover {
+		color:#FF0000;
+		text-decoration:underline;
+	}
+	/*three*/
+	.third-three{
+		width:160px;
+		margin-left:23px;
+		border:1px solid balck;
+	}
+	.third-three{
+		width:135px;
+		float:left;
+	}
+	.third-three-ul{
+		font-size:13px;
+	}
+	.third-three-li{
+		list-style-type:none;
+		margin:10px 0 0 3px;
+	}
+	.third-three-li a:link{
+		color:#223D7C;
+	}
+	.third-three-li a:visited{
+		color:#223D7C;
+	}
+	.third-three-li a:hover{
+		color:#FF0000;
+		text-decoration:underline;
+	}
+	/*four*/
+	.third-four{
+		border-left:1px solid #8C8C8C;
+		float:left;
+		width:170px;
+		height:260px;
+		margin-left:10px;
+	}
+	.third-four-ad{
+		margin:30px 0 0 5px;
+	}
+
+ </style>
+ </head>
+ <body>
+	<div class="top"><!--顶端条-->
+		
+	  <div id="logo1">
+			<img src="img/logo2.jpg">
+	  </div>
+		
+	  <div id="submit">
+		<input class="jiantou" type="button" name="jiantou">
+		<input class="user-name" type="text" name="user-name" value="用户名/邮箱/手机号">
+		<input class="password" type="password" name="password">
+		<input class="submit" type="submit" value="登录">
+	  </div>
+	  <div class="div-ul">
+		<ul class="ul-top">
+		 <li class="li-top"><a class="submit-a" href="#">注册</a></li>
+		 <li class="li-top"><a class="submit-a" href="#">邮件</a></li>
+		 <li class="li-top"><a class="submit-a" href="#">说两句</a></li>
+		</ul>
+	  </div>
+	  <div id="logo3">
+		<img src="img/logo3.jpg"> 
+      </div>   
+   </div><!--顶端条-->
+
+<div id="all">
+	<!--第二行的广告-->
+	<div class="second">
+		<div class="souhu-logo">
+		 <img src="img/logo1.jpg">
+		</div>
+		<!--上面的广告-->
+		<div class="navigation-div">
+		 <div class="navigation-top">
+		  <ul class="navigation-top-ul">
+		   <li class="navigation-top-li"><a style="color:red;" href="#">搜狗</a></li>
+		   <li class="navigation-top-li"><a href="#">输入法</a></li>
+		   <li class="navigation-top-li"><a href="#">浏览器</a></li>
+		   <li class="navigation-top-li"><a href="#">地图</a></li>
+		   <li class="navigation-top-li"><a href="#">邮件</a></li>
+		   <li class="navigation-top-li"><a href="#">博客</a></li>
+		   <li class="navigation-top-li"><a href="#">社区</a></li>
+		   <li class="navigation-top-li"><a href="#">我说两句</a></li>
+		   <li class="navigation-top-li"><a href="#">微门户</a></li>
+		   <li class="navigation-top-li"><a href="#">大视野</a></li>
+		   <li class="navigation-top-li"><a href="#">视频</a></li>
+		   <li class="navigation-top-li"><a href="#">游戏</a></li>
+		   <li class="navigation-top-li"><a href="#">新天龙</a></li>
+		   <li class="navigation-top-li"><a href="#">天天大乱斗</a></li>
+		   <li class="navigation-top-li"><a href="#">手机搜狐</a></li>
+		   <li class="navigation-top-li"><a href="#">手机游戏</a></li>
+		   <li class="navigation-top-li"><a href="#">e购房</a></li>
+		  </ul>
+		 </div>
+		 <!--下面的广告-->
+		 <div class="navigation-bottom">
+			<ul class="navigation-bottom-ul">
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">新闻</a></li>
+			  <li class="navigation-bottom-li"><a href="#">军事</a></li>
+			  <li class="navigation-bottom-li"><a href="#">文化</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">历史</a></li>
+			  <li class="navigation-bottom-li"><a href="#">读书</a></li>
+			  <li class="navigation-bottom-li"><a href="#">评论</a></li>
+			  <li class="navigation-bottom-li"><a href="#">体育</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">NBA</a></li>
+			  <li class="navigation-bottom-li"><a href="#">CBA</a></li>
+			  <li class="navigation-bottom-li"><a href="#">中超</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">高尔夫</a></li>
+			  <li class="navigation-bottom-li"><a href="#">财经</a></li>
+			  <li class="navigation-bottom-li"><a href="#">理财</a></li>
+			  <li class="navigation-bottom-li"><a href="#">股票</a></li>
+			  <li class="navigation-bottom-li"><a href="#">基金</a></li>
+			  <li class="navigation-bottom-li"><a href="#">科技</a></li>
+			  <li class="navigation-bottom-li"><a href="#">数码</a></li>
+			  <li class="navigation-bottom-li"><a href="#">手机</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">创客</a></li>
+			  <li class="navigation-bottom-li"><a href="#">汽车</a></li>
+			  <li class="navigation-bottom-li"><a href="#">二手车</a></li>
+			</ul>
+			<ul class="navigation-bottom-ul">
+			  			  <li class="navigation-bottom-li"><a style="color:red;" href="#">新闻</a></li>
+			  <li class="navigation-bottom-li"><a href="#">军事</a></li>
+			  <li class="navigation-bottom-li"><a href="#">文化</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">历史</a></li>
+			  <li class="navigation-bottom-li"><a href="#">读书</a></li>
+			  <li class="navigation-bottom-li"><a href="#">评论</a></li>
+			  <li class="navigation-bottom-li"><a href="#">体育</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">NBA</a></li>
+			  <li class="navigation-bottom-li"><a href="#">CBA</a></li>
+			  <li class="navigation-bottom-li"><a href="#">中超</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">高尔夫</a></li>
+			  <li class="navigation-bottom-li"><a href="#">财经</a></li>
+			  <li class="navigation-bottom-li"><a href="#">理财</a></li>
+			  <li class="navigation-bottom-li"><a href="#">股票</a></li>
+			  <li class="navigation-bottom-li"><a href="#">基金</a></li>
+			  <li class="navigation-bottom-li"><a href="#">科技</a></li>
+			  <li class="navigation-bottom-li"><a href="#">数码</a></li>
+			  <li class="navigation-bottom-li"><a href="#">手机</a></li>
+			  <li class="navigation-bottom-li"><a style="color:red;" href="#">创客</a></li>
+			  <li class="navigation-bottom-li"><a href="#">汽车</a></li>
+			  <li class="navigation-bottom-li"><a href="#">二手车</a></li>
+			</ul>
+		 </div>
+		</div>
+	
+	</div><!--第二行的广告-->
+	<!--第三行-->
+	<div class="third">
+		
+		<div class="third-one">
+		 <ul class="third-one-ul">
+		    <li class="third-one-li"><a href="#">欢迎入驻搜狐公众平台</a></li>
+		    <li class="third-one-li"><a href="#">搜狐公众平台入驻直达</a></li>
+		    <li class="third-one-li"><a href="#">搜狐公众平台官方账号</a></li>
+		    <li class="third-one-li"><a href="#">金牌推销员的成功秘诀</a></li>
+		    <li class="third-one-li"><a href="#">一个陌生女子的来信</a></li>
+		    <li class="third-one-li"><a href="#">特大反腐走私案的再现</a></li>
+		    <div style="font-size:14px;margin-top:20px;overflow: hidden;"><li class="third-one-li"><a href="#"><img src="img/jiaoyu.jpg" style="float:left;"><p>2015教育产业全貌图解搜狐教育三乐</p></a></li></div>
+		    <div style="font-size:14px;margin-top:10px;overflow: hidden;"><li class="third-one-li"><a href="#"><img src="img/chuguo.jpg" style="float:left;"><p>如何成功留学澳洲去美国的N种方式</p></a></li></div>
+		 </ul>
+		</div>
+		
+		<div class="third-two">
+		 <div class="third-two">
+		   <ul class="third-two-ul">
+			<li class="third-two-li"><a href="#">法医秦明帅癌晚期</a></li>
+			<li class="third-two-li"><a href="#">熊出没之熊大快跑</a></li>
+			<li class="third-two-li"><a href="#">植物大战僵尸王！</a></li>
+			<li class="third-two-li"><a href="#">泡泡龙（星球版）</a></li>
+			<li class="third-two-li"><a href="#">雷电战机之星战版</a></li>
+			<li class="third-two-li"><a href="#">滑雪大冒险西游版</a></li>
+			<li class="third-two-li"><a href="#">地下城勇士神枪手</a></li>
+			<li class="third-two-li"><a href="#">搜狐手游权威媒体</a></li>
+			<img src="img/ad.jpg" style="margin:20px 0 0 10px">
+		   <div style="margin:15px 0 0 0">
+			<li class="third-two-li"><a href="#">法医秦明帅癌晚期</a></li>
+			<li class="third-two-li"><a href="#">熊出没之熊大快跑</a></li>
+			<li class="third-two-li"><a href="#">植物大战僵尸王！</a></li>
+			<li class="third-two-li"><a href="#">泡泡龙（星球版）</a></li>
+			<li class="third-two-li"><a href="#">雷电战机之星战版</a></li>
+			<li class="third-two-li"><a href="#">滑雪大冒险西游版</a></li>
+			<li class="third-two-li"><a href="#">地下城勇士神枪手</a></li>
+			<li class="third-two-li"><a href="#">搜狐手游权威媒体</a></li>
+		   </div>
+		 </div>
+		</div>
+		
+		<div class="third-three">
+		  <ul>
+		   <div style="font-size:13px;overflow: hidden;"><li class="third-three-li"><a href="#"><img src="img/rexiao.jpg" style="float:left;"><p>重庆每周最新房价播报重庆金科正规4房套内6200</p></a></li></div>
+		   <div style="font-size:13px;margin-top:5px;overflow: hidden;"><li class="third-three-li"><a href="#"><img src="img/xinpan.jpg" style="float:left;"><p>秋交会看房刚需小户南岸参展金科正规4房套内6200</p></a></li></div>
+		   <div style="font-size:13px;margin-top:5px;overflow: hidden;"><li class="third-three-li"><a href="#"><img src="img/jiazhuang.jpg" style="float:left;"><p>小户型如何装出格调白领最爱v</p></a></li></div>
+		   <div style="font-size:13px;margin-top:5px;overflow: hidden;"><li class="third-three-li"><a href="#"><img src="img/ershoufang.jpg" style="float:left;"><p>25.8万抢中铁准现房和泓四季C户型金科正规4房套内6200</p></a></li></div>
+		  </ul>
+		</div>
+		<!--four-->
+		<div class="third-four">
+		  <a href="#"><img src="img/ad1.jpg" class="third-four-ad"></a>
+		</div>
+	</div><!--第三行-->
+</div><!--最大的div-->
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动（clear）</title>
+    <style type="text/css">
+        .float{
+            width: 200px;
+            height: 100px;
+            float: left;
+            background-color:skyblue;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div style="border: 1px solid black;width: 800px;">
+    <div class="float">我是浮动的</div>
+    <div class="float">我是浮动的</div>
+    <div class="float">我是浮动的</div>
+    <div class="float">我是浮动的</div>
+    <div class="float">我是浮动的</div>
+    <div class="float">我是浮动的</div>
+    <div class="float">我是浮动的</div>
+    <div style="clear: both;"></div>
+</div>
+</html>

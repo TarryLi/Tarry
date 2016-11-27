@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: "Microsoft yahei";
+}
+#first{
+    height:800px;
+    background-color:#CED7DF;
+    overflow: hidden;
+}
+#first a:link{
+    color:#000000;
+    text-decoration:none;
+}
+#first a:visited{
+    color: #000000;
+}
+#first a:hover{
+    color:#4eacff;
+    text-decoration:none;
+}
+#first a:active{
+    color:#4eacff;
+    text-decoration:none;
+}
+a{
+    text-decoration: none;
+}
+#big-logo {
+    font-size: 100px;
+}
+.left{
+    width:400px;
+    height:400px;
+    margin-left: 170px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    float: left;
+}
+.first-ul{
+    font-size:40px;
+}
+.first-li{
+    list-style-type:none;
+    width:250px;
+    height:45px;
+    background-color:#FFFFFF;
+    margin-top: 40px;
+    text-align: center;
+}
+#photo{
+    width:300px;
+    height:500px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 170px;
+}
+#photo-img{
+    width:300px;
+}
+/*first*/
+
+/*second*/
+#second{
+    height:800px;
+    background-color: #78B758;
+}
+#about-me{
+    text-align: center;
+    font-size: 60px;
+    height:70px;
+    padding-top: 50px;
+}
+#content{
+    height:300px;
+    width:370px;
+    margin:auto;
+}
+#second-ul{
+    list-style-type:none;
+}
+.second-li{
+    height:40px;
+    width:330px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #CDE4B9;
+    margin-top: 40px;
+    padding-left: 5px;
+}
+/*second*/
+
+/*third*/
+#third{
+    height: 800px;
+    background-color: #323B43;
+}
+#my-skills{
+    text-align: center;
+    font-size: 60px;
+    height:70px;
+    padding-top: 30px;
+    color: #FFFFFF;
+}
+#skills{
+    text-align: center;
+    font-size: 40px;
+    height:70px;
+    padding-top: 60px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+#special{
+    text-align: center;
+    font-size: 20px;
+    height:70px;
+    padding-top: 30px;
+    color: #FFFFFF;
+    margin-top: 400px;
+}
+#skills a:link{
+    color:#FFFFFF;
+    text-decoration:none;
+}
+#skills a:visited{
+    color: #FFFFFF;
+}
+#skills a:hover{
+    color:#4eacff;
+    text-decoration:none;
+}
+#skills a:active{
+    color:#4eacff;
+    text-decoration:none;
+}
+/*third*/
+
+/*fourth*/
+#fourth{
+    height:750px;
+    background-color: #78B758;
+}
+#contact-me{
+    text-align: center;
+    font-size: 60px;
+    height:70px;
+    padding-top: 30px;
+    color: #FFFFFF;
+}
+#way{
+    margin: auto;
+    overflow: hidden;
+    width:1200px;
+}
+.ways{
+    float: left;
+    margin-top: 200px;
+    width: 400px;
+    height: 500px;
+}
+.ways-p{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.ways-img{
+    margin:auto;
+    width: 76px;
+}
+/*fourth*/
+
+/*foot*/
+#foot{
+    background-color: #323b43;
+    height: 20px;
+    padding:14px;
+    text-align: center;
+}
+/*foot*/
+
+/*sp*/
+#sp{
+    left:100%;
+    top:100%;
+    position: fixed;
+    margin: -64px 0 0 -50px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;  /* 左边框的宽 */
+    border-right: 20px solid transparent; /* 右边框的宽 */
+    border-bottom: 20px solid #2f2f2f; /* 下边框的长度|高,以及背景色 */
+    font-size: 0;
+    line-height: 0;
+}

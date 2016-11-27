@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位(relativ)</title>
+    <style type="text/css">
+        body{
+            overflow: hidden;
+        }
+        .block1{
+            float: left;
+            margin-left: 10px;
+            border: 1px solid black;
+            font-size: 20px;
+        }
+        .block{
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="width: 200px;height: 300px;background-color: pink;" class="block1">1</div>
+        <div style="width: 200px;height: 300px;background-color: pink;" class="block1">2</div>
+        <div style="width: 200px;height: 300px;background-color: pink;" class="block1 block">我是relativ定位</div>
+        <div style="width: 200px;height: 300px;background-color: pink;" class="block1">4</div>
+        <div style="width: 200px;height: 300px;background-color: pink;" class="block1">5</div>
+        <div style="width: 200px;height: 300px;background-color: pink;" class="block1">6</div>
+    </div>
+</body>
+</html>
